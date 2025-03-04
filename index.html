@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #121212;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 1000px;
+            margin: auto;
+            text-align: center;
+        }
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+            padding: 20px;
+            height: 100vh;
+        }
+        .header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #007bff;
+            box-shadow: 0px 0px 15px #007bff;
+            padding: 5px;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            position: fixed;
+            width: 100%;
+            top: 10px;
+        }
+        .nav a {
+            display: block;
+            padding: 8px 12px;
+            background: #007bff;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            width: 90px;
+            box-shadow: 0px 0px 10px #007bff;
+        }
+        .content section {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 10px;
+            width: 100%;
+        }
+        .skill {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.5);
+            margin-bottom: 20px;
+            width:600px;
+            height: 100px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .skill:hover {
+            transform: scale(1.05);
+        }
+        .skill-bar {
+            margin-top: 10px;
+            height: 10px;
+            background: #007bff;
+            border-radius: 5px;
+        }
+        .social-icons a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 15px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 50%;
+            transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+        }
+        .social-icons a:hover {
+            transform: scale(1.2);
+            background: #0056b3;
+        }
+        h2 {
+            color: #007bff;
+            font-size: 25px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            .nav {
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+            }
+            .nav a {
+                width: auto;
+                padding: 10px 15px;
+            }
+            .skill {
+                width: 100%;
+                height: 80px;
+            }
+            .header {
+                height: auto;
+                padding: 40px 20px;
+            }
+        }
+        .contact {
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav">
+            <a href="project.html">Projects</a>
+            <a href="service.html">Services</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="header">
+            <img src="profile.jpg" alt="Profile Photo">
+            <div>
+                <h1>I'm Ramesh</h1>
+                <h2 style="color: white;font-size: 15px;">I'm from Coimbatore. I am a Web developer</h2>
+                <p>Hello! I'm a passionate web developer specializing in front-end technologies and UI/UX design. With experience in crafting interactive and responsive websites, I focus on creating seamless user experiences.</p>
+                <p>My journey in web development started with a curiosity for design and coding. Over the years, I've worked on various projects, including modern landing pages, interactive UI/UX applications, and engaging portfolio websites.</p>
+                <p>My expertise includes HTML, CSS, JavaScript, and frameworks like React. I thrive in problem-solving and continuously learning new technologies to stay updated with industry trends.</p>
+                <p><strong>"We are not only developers. I can develop the most creative things."</strong></p>
+            </div>
+        </div>
+        <div class="content">
+            <section id="skills" class="section">
+                <h2>Skills</h2>
+                <div class="skills-container">
+                    <div class="skill">
+                        <label>HTML, CSS, JavaScript</label>
+                        <div class="skill-bar" style="width: 90%;"></div>
+                    </div>
+                    <div class="skill">
+                        <label>React & Front-End Development</label>
+                        <div class="skill-bar" style="width: 80%;"></div>
+                    </div>
+                    <div class="skill">
+                        <label>UI/UX Design & Prototyping</label>
+                        <div class="skill-bar" style="width: 85%;"></div>
+                    </div>
+                    <div class="skill">
+                        <label>Responsive Web Development</label>
+                        <div class="skill-bar" style="width: 95%;"></div>
+                    </div>
+                    <div class="skill">
+                        <label>SEO Optimization</label>
+                        <div class="skill-bar" style="width: 75%;"></div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="section contact">
+                <h2>Contact</h2>
+                <p>Name: Ramesh</p>
+                <p>Email: suresh123@gmail.com</p>
+                <p>Phone: 978689983</p>
+                <div class="social-icons">
+                    <a href="#" target="_blank">📷</a>
+                    <a href="#" target="_blank">🔗</a>
+                    <a href="#" target="_blank">📞</a>
+                    <a href="#" target="_blank">🐦</a>
+                    <a href="#" target="_blank">✈️</a>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
